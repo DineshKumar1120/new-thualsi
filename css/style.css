@@ -3785,18 +3785,15 @@ h1 {
     .ismobile {
         display: none;
     }
-
     .logo img {
         width: 75%;
         height: 3rem;
         top: 0;
         left: 0;
     }
-
     .ismobilePara {
         font-size: 10px;
     }
-
     .ismobileHearder {
         font-size: 15px;
     }
