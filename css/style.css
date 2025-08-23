@@ -799,7 +799,7 @@ p {
 .card-img-top {
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
-    width: 635px;
+    width: 666px;
     object-fit: cover;
     height: 205px;
 }
@@ -867,7 +867,7 @@ p {
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 960px;
+    width: 1050px;
 }
 
 .slider::before,
@@ -3793,6 +3793,7 @@ h1 {
     }
     .ismobilePara {
         font-size: 10px;
+        text-align: justify !important;
     }
     .ismobileHearder {
         font-size: 15px;
@@ -3809,4 +3810,16 @@ h1 {
     width: 100% !important;
     height: auto !important;
     margin-left: 15px
+}
+
+.para-height{
+    height: 150px;
+}
+
+.card-height{
+    height: 400px;
+}
+
+.address-height{
+    height:110px
 }
