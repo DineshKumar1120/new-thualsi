@@ -799,7 +799,7 @@ p {
 .card-img-top {
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
-    width: 666px;
+    width: 555px;
     object-fit: cover;
     height: 205px;
 }
@@ -867,7 +867,7 @@ p {
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 1050px;
+    width: 1300px;
 }
 
 .slider::before,
@@ -892,7 +892,7 @@ p {
 }
 
 .slider .slide-track {
-    animation: scroll 40s linear infinite;
+    animation: scroll 50s linear infinite;
     display: flex;
     width: calc(250px * 14);
 }
