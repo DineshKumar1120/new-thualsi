@@ -660,6 +660,7 @@ p {
     border-radius: 10px;
 }
 
+
 .slider-image-wrapper {
     height: 200px;
     width: 100%;
@@ -805,13 +806,22 @@ p {
 }
 
 .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
+  background-color: transparent;
+  width: 100%;              /* responsive inside column */
+  aspect-ratio: 1/1;        /* keeps it square */
+  perspective: 1000px;
+  margin: 5px;              /* extra spacing between cards */
 }
 
-.flip-card-inner {
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* crop nicely */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/*.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -843,7 +853,8 @@ p {
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
-}
+} */
+
 
 .pic-ctn {
     width: 100vw;
@@ -863,11 +874,11 @@ p {
 .slider {
     background: white;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: 100px;
+    height: 120px;
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 1300px;
+    width: 1200px;
 }
 
 .slider::before,
@@ -898,10 +909,20 @@ p {
 }
 
 .slider .slide {
-    height: 100px;
-    width: 250px;
+  display: flex;
+  align-items: center;   /* Vertically center logos */
+  justify-content: center; /* Horizontally center logos */
+  height: 120px;         /* Uniform height for each slot */
+  width: 200px;          /* Uniform width for spacing */
+  padding: 10px;         /* Space around logos */
+  box-sizing: border-box;
 }
 
+.slider .slide img {
+  max-height: 100%;      /* Logo fits inside container */
+  max-width: 100%;       /* Prevents overflow */
+  object-fit: contain;   /* Keeps aspect ratio */
+}
 .main {
     width: 32%;
     margin: 45px auto;
