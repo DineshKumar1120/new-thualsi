@@ -3842,5 +3842,6 @@ h1 {
 }
 
 .address-height{
-    height:110px
+    height:110px;
+    color: white;
 }
